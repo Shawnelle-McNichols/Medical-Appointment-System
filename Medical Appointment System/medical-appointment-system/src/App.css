@@ -1,0 +1,144 @@
+.App {
+  text-align: center;
+}
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+/*Components*/
+.btn-main {
+  background-color: #018abe;
+  color: white;
+  border-radius: 10px;
+}
+
+.btn-main:hover {
+  background-color: #02457a;
+  color: white;
+}
+
+.btn-sec {
+  background-color: white;
+  color: #018abe;
+  border: 3px solid #018abe;
+}
+
+.txt-sml {
+  font-size: 12px;
+}
+
+.form {
+  padding:5px;
+  text-align: center;
+  justify-content: center;
+  background-image: linear-gradient(white, #d6e8ee);
+  height: 100vh;
+}
+
+.no-btn {
+  text-decoration: none;
+  color: #000;
+ 
+  border: none;
+  background-color: white;
+}
+
+.no-btn:hover {
+  color: #018abe;
+}
+
+.h5 {
+  padding-top: 10px;
+}
+
+/*Nav Bar*/
+.nav {
+  display: flex;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0);
+  padding: 15px 5px 5px 10px;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+}
+
+li {
+  margin: 0 20px;
+}
+
+a {
+  display: inline;
+  text-decoration: none;
+  color: white;
+}
+
+
+/*Home*/
+.bg-img {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./images/hero.jpg");
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  color: white;
+}
+
+.bg-content {
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+
+/*Login*/
+
+.card {
+  border-radius: 40px;
+  border: none;
+}
+
+/* Patient Dashboard */
+.flex-column {
+  max-width: 280px;
+  height: 100vh;
+}
+
+.side a {
+  color: black
+}
+.card-2{
+  border-radius: 20px;
+}
+.card-history{
+  min-height: 200px;
+}
+.row-2{
+  height:33%;
+}
+.row-3{
+  min-height:130px;
+  align-items: center;
+  justify-content: center;
+}
+.btn-dash{
+  margin: 10px;
+  width:150px;
+  border-width: 2px;
+  border-radius: 5px;
+  border-color: #d6e8ee;
+}
+.btn-dash:hover{
+  border-color: #018abe;
+}
+.h5 {
+  margin: 10px;
+  margin-bottom: 30px;
+}
