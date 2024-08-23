@@ -14,15 +14,18 @@ function Login() {
         setError('')
         axios.post('http://localhost:5000/login', { email, password })
             .then(result => {
-                const {token,user} = result.data;
+                const { token, user } = result.data;
                 console.log(result.data);
-               localStorage.setItem('token', token);
-               localStorage.setItem('user', JSON.stringify(user));
-                    setEmail('');
-                    setPassword('');
-                    navigate('/patient-dashboard');
+                localStorage.setItem('token', token);
+                localStorage.setItem('user', JSON.stringify(user));
+                setEmail('');
+                setPassword('');
+                navigate('/patient-dashboard');
             })
-            .catch(err => console.log(err))
+            .catch(err => {
+                console.log(err)
+                alert("The email or password is incorrect!");
+            })
     };
 
     return (
